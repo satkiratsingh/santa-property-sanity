@@ -57,5 +57,24 @@ export default defineType({
       title: 'Area Size',
       type: 'string',
     }),
+    defineField({
+      name: 'images',
+      title: 'Images',
+      type: 'array',
+      of: [{type: 'image', options: {hotspot: true}}],
+      options: {
+        layout: 'grid',
+      },
+    }),
+    defineField({
+      name: 'youtubeVideoLink',
+      title: 'Youtube Video Link',
+      type: 'url',
+    }),
+    defineField({
+      name: 'youtubeVideoId',
+      title: 'Youtube Video Id',
+      type: 'string',
+    }),
   ],
 })
